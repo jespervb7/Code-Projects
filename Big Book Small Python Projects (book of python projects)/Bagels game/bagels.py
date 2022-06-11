@@ -84,7 +84,7 @@ def get_clues(guess, secret_num):
             clues.append('Fermi')
         elif guess[i] in secret_num:
             # A correct digit is in the incorrect place.
-            clues.append['Pico']
+            clues.append('Pico')
     if len(clues) == 0:
         return 'Bagels' #There are no correct digits at all. 
     else:
@@ -92,7 +92,7 @@ def get_clues(guess, secret_num):
         #doesn't give information away.
         clues.sort()
         # Make a signle string from the list of string clues.
-        return ''.join(clues)
+        return ' '.join(clues)
 
 
 # If the program is run (instead of imported), run the game:
