@@ -101,18 +101,25 @@ if __name__ == '__main__':
 #questions
 """
 1. What happens when you change the NUM_DIGITS constant? 
+You have to guess more numbers
 
 2. What happens when you change the MAX_GUESSES constant?
+You get more guesses
 
 3. What happens if you set NUM_DIGITS to a number larger than 10?
+You get an index error. This is because we defined a list later on in the code. Line 62 and here we don't have more than 10 numbers. 
 
 4. What happens if you replace secretNum = getSecretNum() on line 30 with secretNum = '123'?
+This will make it so that the secretnumber is always 123
 
 5. What error message do you get if you delete or comment out numGuesses = 1 on line 34?
+unboundLocalError. This is because the variable is not defined, but was used in the code before it was defined. 
 
 6. What happens if you delete or comment out random.shuffle(numbers) on line 62?
+You will always get the same secret num. 012 in our case. 
 
 7. What happens if you delete or comment out if guess == secretNum: on line 74 and return 'You got it!' on line 75?
+Everyone will guess the right number straight away. 
 
 8. What happens if you comment out numGuesses += 1 on line 44?
 You will enter an infinite loop. It would never result into a True value and therefor keep running. 
