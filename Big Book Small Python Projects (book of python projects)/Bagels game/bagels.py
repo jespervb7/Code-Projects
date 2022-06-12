@@ -60,7 +60,6 @@ def main():
     
 
 def get_secret_num():
-    #fault in code?
     """Returns a string made up of num_digitis unique random digits."""
     numbers = list('0123456789') #Create a list of digits 0 to 9
     random.shuffle(numbers) #Shuffle them into a random order
@@ -116,4 +115,5 @@ if __name__ == '__main__':
 7. What happens if you delete or comment out if guess == secretNum: on line 74 and return 'You got it!' on line 75?
 
 8. What happens if you comment out numGuesses += 1 on line 44?
+You will enter an infinite loop. It would never result into a True value and therefor keep running. 
 """
